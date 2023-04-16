@@ -1,6 +1,6 @@
 	 import { Request, Response } from 'express'
-	 import { BadRequestError } from '../helpers/api-erros'
-	 import { ordemServicoPerfilRepository } from '../repositories/ordemServicoPerfil'
+	 import { BadRequestError } from '../../helpers/api-erros'
+	 import { ordemServicoPerfilRepository } from '../../repositories/seguranca/ordemServicoPerfil'
 	 
 	 export class OrdemservicoperfilController {
 	 async create(req: Request, res: Response) {

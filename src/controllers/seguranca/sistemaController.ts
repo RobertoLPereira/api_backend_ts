@@ -1,7 +1,7 @@
 
 import { Request, Response } from 'express'
-import { BadRequestError } from '../helpers/api-erros'
-import { SistemaRepository } from '../repositories/sistemaRepository'
+import { BadRequestError } from '../../helpers/api-erros'
+import { SistemaRepository } from '../../repositories/seguranca/sistemaRepository'
      
 export class SistemaController {
 async create(req: Request, res: Response) {

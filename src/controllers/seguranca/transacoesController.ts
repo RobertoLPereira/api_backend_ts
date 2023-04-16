@@ -1,6 +1,6 @@
 	 import { Request, Response } from 'express'
-	 import { BadRequestError } from '../helpers/api-erros'
-	 import { transacaoRepository } from '../repositories/transacoesRepository'
+	 import { BadRequestError } from '../../helpers/api-erros'
+	 import { transacaoRepository } from '../../repositories/seguranca/transacoesRepository'
 	 
 	 export class TransacoesController {
 	 async create(req: Request, res: Response) {

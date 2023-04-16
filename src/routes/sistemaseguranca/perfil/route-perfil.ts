@@ -1,6 +1,6 @@
 import { Router } from 'express'
-import { PerfilController } from '../../../controllers/perfilController'
-import { PerfilsistemaController } from '../../../controllers/perfilSistemaController'
+import { PerfilController } from '../../../controllers/seguranca/perfilController'
+import { PerfilsistemaController } from '../../../controllers/seguranca/perfilSistemaController'
 import { CredenciaisperfilController } from '../../../controllers/seguranca/credenciaisPerfilController'
 
 const routesPerfil = Router()

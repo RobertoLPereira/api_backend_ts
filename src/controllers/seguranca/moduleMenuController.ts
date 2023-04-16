@@ -1,6 +1,6 @@
 	 import { Request, Response } from 'express'
-	 import { BadRequestError } from '../helpers/api-erros'
-	 import { moduloMenuRepository } from '../repositories/menuRepository'
+	 import { BadRequestError } from '../../helpers/api-erros'
+	 import { moduloMenuRepository } from '../../repositories/seguranca/menuRepository'
 	 
 	 export class ModulomenuController {
 	 async create(req: Request, res: Response) {

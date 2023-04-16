@@ -1,4 +1,4 @@
-import { AppDataSource } from '../data-source'
-import { Perfil } from '../entities/perfil'
+import { AppDataSource } from '../../data-source'
+import { Perfil } from '../../entities/seguranca/perfil'
 
 export const perfilRepository = AppDataSource.getRepository(Perfil)

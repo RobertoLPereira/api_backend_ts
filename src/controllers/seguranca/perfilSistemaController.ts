@@ -1,6 +1,6 @@
 	 import { Request, Response } from 'express'
-	 import { BadRequestError } from '../helpers/api-erros'
-	 import { perfilSistemaRepository } from '../repositories/perfilSistemaRepository'
+	 import { BadRequestError } from '../../helpers/api-erros'
+	 import { perfilSistemaRepository } from '../../repositories/seguranca/perfilSistemaRepository'
 	 
 	 export class PerfilsistemaController {
 	 async create(req: Request, res: Response) {

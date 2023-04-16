@@ -1,7 +1,7 @@
 import { Router } from 'express'
-import { ModulomenuController } from '../../../controllers/moduleMenuController'
-import { SubtransacaomenuController } from '../../../controllers/subTransacaoMenuController'
-import { TransacoesController } from '../../../controllers/transacoesController'
+import { ModulomenuController } from '../../../controllers/seguranca/moduleMenuController'
+import { SubtransacaomenuController } from '../../../controllers/seguranca/subTransacaoMenuController'
+import { TransacoesController } from '../../../controllers/seguranca/transacoesController'
 
 const routesopcoesMenu = Router()
 

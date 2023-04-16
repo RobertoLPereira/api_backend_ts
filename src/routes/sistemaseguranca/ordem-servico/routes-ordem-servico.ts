@@ -1,7 +1,7 @@
 import { Router } from 'express'
-import { OrdemservicocorpoController } from '../../../controllers/ordemServicoCorpoController'
-import { OrdemservicoperfilController } from '../../../controllers/ordemServicoPerfilController'
-import { OrdemservicocienciaController } from '../../../controllers/ordemServicoCiencia'
+import { OrdemservicocorpoController } from '../../../controllers/seguranca/ordemServicoCorpoController'
+import { OrdemservicoperfilController } from '../../../controllers/seguranca/ordemServicoPerfilController'
+import { OrdemservicocienciaController } from '../../../controllers/seguranca/ordemServicoCiencia'
 
 const routesOrdemServco = Router()
 

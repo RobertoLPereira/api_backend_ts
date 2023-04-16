@@ -1,6 +1,6 @@
 	 import { Request, Response } from 'express'
-	 import { BadRequestError } from '../helpers/api-erros'
-	 import { subtransacaomenuRepository } from '../repositories/subTrasacaoMenuRepository'
+	 import { BadRequestError } from '../../helpers/api-erros'
+	 import { subtransacaomenuRepository } from '../../repositories/seguranca/subTrasacaoMenuRepository'
 	 
 	 export class SubtransacaomenuController {
 	 async create(req: Request, res: Response) {
