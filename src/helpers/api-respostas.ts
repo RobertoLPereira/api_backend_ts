@@ -1,35 +1,25 @@
-export class ApiError extends Error {
-	public readonly statusCode: number
+import { ApiError } from "./api-erros"
 
-	constructor(message: string, statusCode: number) {
-		super(message)
-		this.statusCode = statusCode
-	}
-}
-
-export class BadRequestError extends ApiError {
+export class Ok extends ApiError {
 	constructor(message: string) {
-		super(message, 400)
+		super(message, 200)
 	}
 }
-
-export class NotFoundError extends ApiError {
-	constructor(message: string) {
-		super(message, 404)
+export class Created extends ApiError{
+	constructor(message: string){
+		super(message,201)
 	}
 }
-
-export class UnauthorizedError extends ApiError {
-	constructor(message: string) {
-		super(message, 401)
-	}
+export class NotModified extends ApiError{
+    constructor(message: string){
+        super(message,304)
+    }
 }
-export class InternalServerError extends ApiError{
-	constructor(message: string) {
-		super(message, 500)
-	}
+export class PreconditionFailed extends ApiError{
+    constructor(message: string){
+        super(message,412)
+    }
 }
-
 /*Códigos de Status HTTP
 Esse site é uma referência a todos os códigos de status HTTP com suas definições e exemplos de código em algumas linguagens/frameworks.
 Você pode acessar httpstatus.com.br/codigo para ver um código especifico ou clicar na listagem abaixo.

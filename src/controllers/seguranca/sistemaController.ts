@@ -8,7 +8,7 @@ async create(req: Request, res: Response) {
    const { idsistema,nomesistema,sigla,versao,url,status,} = req.body
    const { duplicidade } = req.params
    /*Verifica duplicidade antes de incluir o registro*/
-   const sistema = await SistemaRepository.findOneBy({ nomesistema: duplicidade })
+   const sistema = await SistemaRepository.findOneBy({ nomesistema: nomesistema })
 
    if (sistema) {
        throw new BadRequestError('Sistema já existe')
@@ -20,7 +20,7 @@ async create(req: Request, res: Response) {
    }
 
    async list(req: Request, res: Response) {
-		try {
+		try {            
 			const sistemas = await SistemaRepository.find({
 				relations: {
                     modulomenus: true,

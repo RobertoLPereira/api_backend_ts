@@ -154,11 +154,11 @@ export class Pessoa {
   @OneToMany(() => Endereco, (endereco) => endereco.idpessoa2)
   enderecos: Endereco[];
 
-  @OneToMany(() => Fisica, (fisica) => fisica.idpessoa2)
-  fisicas: Fisica[];
+  @OneToMany(() => Fisica, (fisica) => fisica.pessoa)
+  fisica: Fisica[];
 
-  @OneToMany(() => Juridica, (juridica) => juridica.idpessoa2)
-  juridicas: Juridica[];
+  @OneToMany(() => Juridica, (juridica) => juridica.pessoa)
+  juridica: Juridica[];
 
   @OneToMany(
     () => Pessoaregimetributacao,

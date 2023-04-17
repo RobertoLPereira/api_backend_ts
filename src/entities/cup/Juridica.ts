@@ -121,7 +121,7 @@ export class Juridica {
   })
   idestacao: string | null;
 
-  @ManyToOne(() => Pessoa, (pessoa) => pessoa.juridicas)
+  @ManyToOne(() => Pessoa, (pessoa) => pessoa.juridica)
   @JoinColumn([{ name: "idpessoa", referencedColumnName: "idpessoa" }])
-  idpessoa2: Pessoa;
+  pessoa: Pessoa;
 }

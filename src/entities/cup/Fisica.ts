@@ -167,7 +167,7 @@ export class Fisica {
   @PrimaryGeneratedColumn({ type: "integer", name: "idfisica" })
   idfisica: number;
 
-  @ManyToOne(() => Pessoa, (pessoa) => pessoa.fisicas)
+  @ManyToOne(() => Pessoa, (pessoa) => pessoa.fisica)
   @JoinColumn([{ name: "idpessoa", referencedColumnName: "idpessoa" }])
-  idpessoa2: Pessoa;
+  pessoa: Pessoa;
 }

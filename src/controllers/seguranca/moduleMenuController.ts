@@ -22,6 +22,7 @@
 	async list(req: Request, res: Response) {
 		const modulomenus = await moduloMenuRepository.find({
 			relations:{
+				sistema:true,
 				transacoes:true,
 				submenu2:true
 			}
