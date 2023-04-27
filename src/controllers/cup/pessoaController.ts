@@ -25,7 +25,6 @@ export class PessoaController {
         }		
 	}
     async list(req: Request, res: Response) {
-		const {skip,take} = req.params;
 		const pessoas = await pessoaRepository.findAndCount({
 			relations: {fisica: true,juridica:true,},
 		})

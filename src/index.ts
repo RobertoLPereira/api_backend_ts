@@ -1,5 +1,6 @@
 import 'express-async-error'
 import express from 'express'
+import cors from 'cors'
 import { AppDataSource } from './data-source'
 import routes from './routes'
 import routesSistema from './routes/sistemaseguranca/sistema/routes-sistema'
@@ -18,6 +19,7 @@ AppDataSource.initialize().then(() => {
 	app.use(routesOrdemServco)
 	app.use(routesopcoesMenu)
 	app.use(routesPerfil)
+	app.use(cors)
 	console.log("O sistema está disponível  em http://localhost:%s",process.env.PORT);
 	app.use(errorMiddleware)
 	return app.listen(process.env.PORT)
